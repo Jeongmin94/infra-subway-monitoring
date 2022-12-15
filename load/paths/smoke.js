@@ -12,7 +12,7 @@ export let options = {
     },
 };
 
-const BASE_URL = 'https://hey-mando.p-e.kr';
+const BASE_URL = 'http://dev.hey-mando.p-e.kr:8080';
 
 export default function () {
     const params = {

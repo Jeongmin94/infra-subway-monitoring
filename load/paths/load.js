@@ -4,7 +4,7 @@ import {check} from 'k6';
 export let options = {
     stages: [
         {duration: '20s', target: 132},
-        {duration: '1m', target: 132},
+        {duration: '7m', target: 132},
         {duration: '20s', target: 0}
     ],
 
@@ -13,7 +13,7 @@ export let options = {
     },
 };
 
-const BASE_URL = 'https://hey-mando.p-e.kr';
+const BASE_URL = 'http://dev.hey-mando.p-e.kr:8080';
 
 export default function () {
     const params = {

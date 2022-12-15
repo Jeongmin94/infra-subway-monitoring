@@ -3,13 +3,13 @@ import {check} from 'k6';
 
 export let options = {
     stages: [
-        {duration: '10s', target: 50},
-        {duration: '10s', target: 100},
-        {duration: '10s', target: 150},
-        {duration: '10s', target: 200},
-        {duration: '10s', target: 250},
-        {duration: '10s', target: 300},
-        {duration: '10s', target: 0},
+        {duration: '20s', target: 100},
+        {duration: '20s', target: 200},
+        {duration: '20s', target: 300},
+        {duration: '20s', target: 400},
+        {duration: '20s', target: 500},
+        {duration: '20s', target: 600},
+        {duration: '20s', target: 0},
     ],
 
     thresholds: {
@@ -17,7 +17,7 @@ export let options = {
     },
 };
 
-const BASE_URL = 'https://hey-mando.p-e.kr';
+const BASE_URL = 'http://dev.hey-mando.p-e.kr:8080';
 
 export default function () {
     const params = {
